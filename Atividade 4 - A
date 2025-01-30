@@ -7,7 +7,7 @@ namespace Atividade_4__A
 		public static void Main(string[] args)
 		{
 			Console.WriteLine("Qual a sua idade: ");
-			int idade = Convert.ToInt32(Console.ReadLine());
+			int idade = Convert.ToInt32(Console.ReadLine().ToLower());
 			Console.WriteLine("Você possui uma carteira de motorista? 's' ou 'n' ");
 			char carteira = Convert.ToChar(Console.ReadLine());
 			

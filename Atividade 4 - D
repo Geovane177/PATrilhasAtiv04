@@ -1,0 +1,24 @@
+using System;
+
+namespace Atividade_4__D
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Você é um assinante do nosso plano de streaming? 's' ou 'n' ");
+			char streaming = Convert.ToChar(Console.ReadLine().ToLower());
+			Console.WriteLine("Você ja assistiu stranger things? 's' ou 'n'");
+			char serie = Convert.ToChar(Console.ReadLine().ToLower());
+			
+			if (streaming == 's' && serie == 's') {
+				Console.WriteLine("Ótimo, agora você pode assistir à nova temporada!");
+			}
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");	
+			Console.ReadKey(true);
+		}
+	}
+}

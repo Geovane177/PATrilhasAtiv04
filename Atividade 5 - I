@@ -1,0 +1,23 @@
+using System;
+
+namespace Atividade_5__I
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Digite dois número ");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			int n2 = Convert.ToInt32(Console.ReadLine());
+			
+			String resultado;
+				
+			resultado = (n1 % n2 == 0) ? "Divisivel" : "indivisivel" ;
+			Console.WriteLine(resultado);
+		
+			
+			Console.Write("Press any key to continue . . . ");	
+			Console.ReadKey(true);
+		}
+	}
+}

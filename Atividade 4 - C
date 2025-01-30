@@ -1,0 +1,26 @@
+using System;
+
+namespace Atividade_4__B
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Você possui um diploma de ensino superior? 's' ou 'n' ");
+			char ensino = Convert.ToChar(Console.ReadLine().ToLower());
+			Console.WriteLine("Quantos anos você tem?");
+			int idade = Convert.ToInt32(Console.ReadLine());
+			
+			if (ensino == 's' && idade > 21) {
+				Console.WriteLine("Parabéns, você está qualificado para a vaga!");
+			}else{
+				Console.WriteLine("Você não está qualificado para a vaga");
+			}
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");	
+			Console.ReadKey(true);
+		}
+	}
+}

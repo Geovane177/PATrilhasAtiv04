@@ -1,0 +1,26 @@
+using System;
+
+namespace Atividade_4__B
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Você gostaria de comprar um carro novo? 's' ou 'n' ");
+			char carro = Convert.ToChar(Console.ReadLine().ToLower());
+			Console.WriteLine("Você tem dinheiro para isso? 's' ou 'n' ");
+			char dinheiro = Convert.ToChar(Console.ReadLine().ToLower());
+			
+			if (carro == 's' && dinheiro == 's') {
+				Console.WriteLine("Parabéns, você pode comprar um carro novo!");
+			}else{
+				Console.WriteLine("Você não pode comprar um carro novo");
+			}
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}

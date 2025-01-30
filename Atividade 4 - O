@@ -1,0 +1,24 @@
+using System;
+
+namespace Atividade_4__O
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Você deseja cancelar a operação? ");
+			string resposta = Convert.ToString(Console.ReadLine().ToLower());
+			
+			
+			
+			if (resposta == "n" || resposta == "não" || resposta == "nao") {
+				Console.WriteLine("Por favor, confirme o cancelamento da operação");
+			}else if (resposta == "s" || resposta == "sim") {
+				Console.WriteLine("Por favor, confirme a finalização da operação");
+			}
+			
+			Console.Write("Press any key to continue . . . ");	
+			Console.ReadKey(true);
+		}
+	}
+}

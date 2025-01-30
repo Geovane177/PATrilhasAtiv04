@@ -1,0 +1,23 @@
+using System;
+
+namespace Atividade_5__B
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Digite uma palavra");
+			string palavra = Convert.ToString(Console.ReadLine());
+			
+			
+			bool resultado;
+				
+			resultado = (palavra == "verdadeiro") ? true : false ;
+			Console.WriteLine(resultado);
+		
+			
+			Console.Write("Press any key to continue . . . ");	
+			Console.ReadKey(true);
+		}
+	}
+}

@@ -1,0 +1,29 @@
+using System;
+
+namespace Atividade_4__G
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+			Console.WriteLine("Digite um número inteiro: ");
+			int n1 = Convert.ToInt32(Console.ReadLine());
+			
+			int divi = n1 % 3;
+				int divi2 = n1 % 5;
+				
+				if (divi == 0 || divi2 == 0) {
+					Console.WriteLine("O número é divisivel por 3 ou 5!");
+				}else{
+					Console.WriteLine("O número não é divisivel por 3 ou 5!");
+				}
+			
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");	
+			Console.ReadKey(true);
+		}
+	}
+}
